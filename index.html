@@ -32,7 +32,7 @@
     a { text-decoration: none; transition: opacity 0.15s; }
     a:hover { opacity: 0.8; }
 
-    /* ══ NAV ══ */
+    
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(10,15,30,0.9); backdrop-filter: blur(16px);
@@ -71,7 +71,7 @@
     }
     .mobile-menu a:hover { color: var(--text); background: var(--surface); opacity: 1; }
 
-    /* ══ SECTIONS ══ */
+    
     section { padding: 100px 24px; }
     .container { max-width: 960px; margin: 0 auto; }
     .eyebrow {
@@ -85,7 +85,7 @@
     }
     .section-sub { color: var(--dim); font-size: 15px; max-width: 480px; line-height: 1.7; margin-bottom: 48px; }
 
-    /* ══ HERO ══ */
+   
     #hero {
       min-height: 100vh; padding-top: 64px;
       display: flex; align-items: center;
@@ -155,7 +155,7 @@
       border: 1px solid rgba(99,102,241,0.2);
     }
 
-    /* ══ PROJECTS ══ */
+    
     .projects-grid { display: grid; gap: 22px; }
     .card {
       background: var(--surface); border: 1px solid var(--border);
@@ -183,7 +183,7 @@
     }
     .card-link:hover { opacity: 0.75; }
 
-    /* ══ EXPERIENCE ══ */
+    
     #experience { background: var(--bg2); }
     .timeline { display: flex; flex-direction: column; gap: 0; position: relative; }
     .timeline::before {
@@ -286,13 +286,13 @@
     .loc-label { font-size: 10px; color: #475569; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-family: 'Syne', sans-serif; }
     .loc-val { font-size: 13px; color: var(--muted); }
 
-    /* ══ FOOTER ══ */
+   
     footer {
       text-align: center; padding: 32px 24px;
       border-top: 1px solid var(--border); color: var(--dim); font-size: 13px;
     }
 
-    /* ══ RESPONSIVE ══ */
+    
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
       .nav-links { display: none; }
@@ -307,7 +307,7 @@
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
+
 <nav>
   <span class="logo">TS</span>
   <div class="nav-links">
@@ -329,7 +329,7 @@
   <a href="#contact" onclick="closeMenu()" style="color:#a5b4fc">Hire Me →</a>
 </div>
 
-<!-- ══ HERO ══ -->
+
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-badge">
@@ -353,7 +353,7 @@
   </div>
 </section>
 
-<!-- ══ SKILLS ══ -->
+
 <section id="skills">
   <div class="container">
     <p class="eyebrow">What I Know</p>
@@ -398,7 +398,7 @@
   </div>
 </section>
 
-<!-- ══ PROJECTS ══ -->
+
 <section id="projects">
   <div class="container">
     <p class="eyebrow">What I've Built</p>
@@ -406,7 +406,7 @@
     <p class="section-sub">Real-world full-stack applications — each with a separate frontend &amp; backend repo and a live deployment.</p>
     <div class="projects-grid">
 
-      <!-- ShopEase -->
+      
       <div class="card" onmouseenter="hoverCard(this,'#FF6B6B')" onmouseleave="unhoverCard(this)">
         <div class="card-bar" style="background:linear-gradient(90deg,#FF6B6B,transparent)"></div>
         <div class="card-header">
@@ -441,7 +441,7 @@
         </div>
       </div>
 
-      <!-- Note App -->
+      
       <div class="card" onmouseenter="hoverCard(this,'#38BDF8')" onmouseleave="unhoverCard(this)">
         <div class="card-bar" style="background:linear-gradient(90deg,#38BDF8,transparent)"></div>
         <div class="card-header">
@@ -476,7 +476,7 @@
         </div>
       </div>
 
-      <!-- Password Reset -->
+    
       <div class="card" onmouseenter="hoverCard(this,'#4ADE80')" onmouseleave="unhoverCard(this)">
         <div class="card-bar" style="background:linear-gradient(90deg,#4ADE80,transparent)"></div>
         <div class="card-header">
@@ -515,7 +515,7 @@
   </div>
 </section>
 
-<!-- ══ EXPERIENCE ══ -->
+
 <section id="experience">
   <div class="container">
     <p class="eyebrow">Where I've Worked</p>
@@ -568,7 +568,7 @@
   </div>
 </section>
 
-<!-- ══ CONTACT ══ -->
+
 <section id="contact">
   <div class="container">
     <p class="eyebrow">Get In Touch</p>
@@ -576,7 +576,7 @@
     <p class="section-sub">Available for freelance projects, full-time roles, and collaborations.</p>
 
     <div class="contact-grid">
-      <!-- Form -->
+     
       <div class="form-card">
         <h3>Send a Message</h3>
         <div id="form-body">
@@ -611,7 +611,7 @@
         </div>
       </div>
 
-      <!-- Sidebar -->
+     
       <div class="sidebar">
         <div class="sidebar-card">
           <p class="sidebar-label">Connect</p>
@@ -664,7 +664,7 @@
   </div>
 </section>
 
-<!-- ══ FOOTER ══ -->
+
 <footer>
   <p>Designed &amp; Built by <strong style="color:var(--text)">Tharshini S</strong> · Full Stack Developer · Chennai, India</p>
 </footer>
@@ -701,7 +701,7 @@
     document.getElementById('success-msg').style.display = 'none';
   }
 
-  // Highlight active nav on scroll
+  
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a:not(.hire-btn)');
   window.addEventListener('scroll', () => {
